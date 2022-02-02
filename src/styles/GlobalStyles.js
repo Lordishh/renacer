@@ -14,10 +14,13 @@ const GlobalStyles = createGlobalStyle`
     --darkBlue_2: #50B7A9;
     --darkBlue_3: #112623;
     --darkBlue_4: #0A1412;
-    --mediumSlateBlue: #6C62E2;
-    --lightBlue_1: #F3F1FE;
+    --mediumSlateBlue: #127864;
+    --lightBlue_1: #C8F0E8;
     --white: #FFFFFF;
-    --black: #000000
+    --black: #000000;
+
+    /* Others */
+    --header-height: 50px;
   }
   html {
     font-size: 10px;
