@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiMoon, FiSun } from 'react-icons/fi';
 import styled from 'styled-components';
+import ThemeContext from '../contexts/ThemeContext';
+import themeList from '../data/themeList';
 
 const ThemeSwitcherStyles = styled.div`
   label {
@@ -53,18 +55,27 @@ const ThemeSwitcherStyles = styled.div`
   }
 `;
 
-const ThemeSwitcher = () => (
-  <ThemeSwitcherStyles>
-    <input type="checkbox" id="switcher" />
-    <label htmlFor="switcher">
-      <div className="icon">
-        <FiSun />
-      </div>
-      <div className="icon">
-        <FiMoon />
-      </div>
-    </label>
-  </ThemeSwitcherStyles>
-);
+const ThemeSwitcher = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  return (
+    <ThemeSwitcherStyles>
+      <input
+        type="checkbox"
+        id="switcher"
+        onChange={toggleTheme}
+        checked={theme === themeList.dark}
+      />
+      <label htmlFor="switcher">
+        <div className="icon">
+          <FiSun />
+        </div>
+        <div className="icon">
+          <FiMoon />
+        </div>
+      </label>
+    </ThemeSwitcherStyles>
+  );
+};
 
 export default ThemeSwitcher;

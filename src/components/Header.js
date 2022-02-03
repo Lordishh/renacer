@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { Link } from 'react-scroll';
 import styled from 'styled-components';
+import themeList from '../data/themeList';
 import ThemeSwitcher from './ThemeSwitcher';
 
 const HeaderStyles = styled.header`
@@ -10,7 +11,8 @@ const HeaderStyles = styled.header`
   left: 0;
   width: 100%;
   height: var(--header-hight);
-  background-color: var(--lightBlue_1);
+  background-color: ${({ theme: { theme } }) =>
+    theme === themeList.light ? 'var(--lightBlue_1)' : 'var(--darkBlue_3)'};
   border-bottom: 1px solid var(--mediumSlateBlue);
   .navigation {
     display: flex;
@@ -21,7 +23,8 @@ const HeaderStyles = styled.header`
   .logo {
     font-family: 'Faster One', cursive;
     font-size: 3rem;
-    color: var(--darkBlue_2);
+    color: ${({ theme: { theme } }) =>
+      theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)'};
   }
   nav ul li {
     display: inline-block;
@@ -31,7 +34,8 @@ const HeaderStyles = styled.header`
       font-weight: 500;
       display: inline-block;
       padding: 0.5rem 1rem;
-      color: var(--darkBlue_2);
+      color: ${({ theme: { theme } }) =>
+        theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)'};
     }
     &:hover {
       a {
@@ -52,7 +56,8 @@ const HeaderStyles = styled.header`
     margin-left: 10px;
     padding: 3px;
     svg {
-      color: var(--darkBlue_1);
+      color: ${({ theme: { theme } }) =>
+        theme === themeList.light ? 'var(--darkBlue_1)' : 'var(--lightBlue_1)'};
     }
     &:hover {
       background-color: #8080803b;
@@ -80,7 +85,8 @@ const HeaderStyles = styled.header`
       max-width: 250px;
       top: 0;
       right: 0%;
-      background-color: var(--lightBlue_2);
+      background-color: ${({ theme: { theme } }) =>
+        theme === themeList.light ? 'var(--lightBlue_2)' : 'var(--darkBlue_4)'};
       height: 100vh;
       z-index: 100;
       transform: translateX(100%);
