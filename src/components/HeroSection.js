@@ -56,13 +56,11 @@ const HeroSection = () => (
     <div className="container">
       <div className="hero__wrapper">
         <div className="hero__info">
-          <HeroTitle className="hero__title">
-            la buena condición física
-          </HeroTitle>
+          <HeroTitle className="hero__title">¿Querés probar?</HeroTitle>
           <ParagraphText className="hero__desc">
-            es el primer requisito para la felicidad
+            Solicitá una clase totalmente gratuita.
           </ParagraphText>
-          <PrimaryButton>Inscribirse</PrimaryButton>
+          <PrimaryButton>Contactarse</PrimaryButton>
         </div>
         <div className="hero__img">
           <img src={HeroImg} alt="Renacer" />
