@@ -22,7 +22,7 @@ const HeaderStyles = styled.header`
   }
   .logo {
     font-family: 'Faster One', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     color: ${({ theme: { theme } }) =>
       theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)'};
   }

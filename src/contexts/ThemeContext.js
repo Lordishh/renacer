@@ -8,6 +8,10 @@ const darkTheme = themeList.dark;
 const themeReducer = (state, action) => {
   switch (action.type) {
     case 'TOGGLE_THEME':
+      localStorage.setItem(
+        'theme',
+        state.theme === lightTheme ? darkTheme : lightTheme
+      );
       return {
         theme: state.theme === darkTheme ? lightTheme : darkTheme,
       };
@@ -22,14 +26,15 @@ const ThemeContextProvider = ({ children }) => {
     const prefersDark =
       window.matchMedia &&
       window.matchMedia('(prefers-color-scheme: dark)').matches;
-
     if (theme) {
       return theme;
     }
-    if (prefersDark) {
-      return darkTheme;
+    if (!theme) {
+      if (prefersDark) {
+        return darkTheme;
+      }
+      return lightTheme;
     }
-    return lightTheme;
   };
 
   const initialState = {
@@ -37,7 +42,6 @@ const ThemeContextProvider = ({ children }) => {
   };
 
   const [state, dispatch] = useReducer(themeReducer, initialState);
-
   const value = {
     theme: state.theme,
     toggleTheme: () => dispatch({ type: 'TOGGLE_THEME' }),
@@ -48,5 +52,5 @@ const ThemeContextProvider = ({ children }) => {
   );
 };
 
-export { ThemeContextProvider };
 export default ThemeContext;
+export { ThemeContextProvider };

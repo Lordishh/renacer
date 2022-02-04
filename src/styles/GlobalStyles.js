@@ -21,7 +21,7 @@ const GlobalStyles = createGlobalStyle`
   --white: #FFFFFF;
   --black: #000000;
   /* others */
-    --header-height: 50px;
+    --header-height: 70px;
 }
   html {
     font-size: 10px;
