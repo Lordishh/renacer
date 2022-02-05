@@ -65,7 +65,7 @@ function AboutSection() {
               mejorando la concentración.
             </ParagraphText>
             <PrimaryButton buttonType={Link} to="contact" smooth>
-              Get In Touch
+              Contactarse
             </PrimaryButton>
           </div>
         </div>

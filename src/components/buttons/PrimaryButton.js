@@ -17,8 +17,10 @@ const ButtonStyles = styled.a`
   }
 `;
 
-const PrimaryButton = ({ children, ...rest }) => (
-  <ButtonStyles {...rest}>{children}</ButtonStyles>
+const PrimaryButton = ({ children, buttonType, ...rest }) => (
+  <ButtonStyles as={buttonType} {...rest}>
+    {children}
+  </ButtonStyles>
 );
 
 export default PrimaryButton;
