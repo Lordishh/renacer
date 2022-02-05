@@ -22,15 +22,14 @@ const HeaderStyles = styled.header`
   }
   .logo {
     font-family: 'Faster One', cursive;
-    font-size: 2rem;
-    color: ${({ theme: { theme } }) =>
-      theme === themeList.light ? 'var(--darkBlue_2)' : 'var(--lightBlue_1)'};
+    font-size: 3rem;
+    color: var(--mediumSlateBlue);
   }
   nav ul li {
     display: inline-block;
     margin: 0 0.5rem;
     a {
-      font-size: 1.6rem;
+      font-size: 2rem;
       font-weight: 500;
       display: inline-block;
       padding: 0.5rem 1rem;
@@ -142,16 +141,16 @@ const Header = () => {
               )}
               <ul>
                 <li>
-                  <Link to="inicio">Inicio</Link>
+                  <Link to="hero">Inicio</Link>
                 </li>
                 <li>
-                  <Link to="entrenamientos">Entrenamientos</Link>
+                  <Link to="services">Entrenamientos</Link>
                 </li>
                 <li>
-                  <Link to="nosotras">Nosotras</Link>
+                  <Link to="about">Nosotras</Link>
                 </li>
                 <li>
-                  <Link to="contacto">Contacto</Link>
+                  <Link to="contact">Contacto</Link>
                 </li>
               </ul>
             </nav>
