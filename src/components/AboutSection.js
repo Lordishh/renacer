@@ -36,6 +36,7 @@ const AboutStyles = styled.div`
       flex-direction: column;
     }
     .about__img {
+      width: 100%;
       margin: 0 auto;
       margin-bottom: 3rem;
       max-width: 400px;
@@ -59,10 +60,10 @@ function AboutSection() {
               Trayectoría y objetivos
             </SectionTitle>
             <ParagraphText className="about__desc">
-              Renacer es un centro de pilates con cinco años de trayectoría.
+              Renacer es un centro de pilates con siete años de trayectoría.
               Nuestro objetivo es ayudar a las personas a encontrar un
-              equilibrio, buscando aumentar la fuerza, la flexibilidad y
-              mejorando la concentración.
+              equilibrio, buscando aumentar la fuerza, la flexibilidad,
+              concentración y bienestar en general.
             </ParagraphText>
             <PrimaryButton buttonType={Link} to="contact" smooth>
               Contactarse
