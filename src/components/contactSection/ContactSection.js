@@ -45,7 +45,7 @@ const ContactSection = () => (
       <div className="contact__wrapper">
         <div className="contact__info">
           <SectionTitle>Déjanos tu mensaje</SectionTitle>
-          <ParagraphText>Nos encantaría saber de usted</ParagraphText>
+          <ParagraphText>Estamos ansiosas por conocerte</ParagraphText>
         </div>
         <form className="contact__form">
           <FormField
