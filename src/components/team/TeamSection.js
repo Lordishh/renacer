@@ -5,13 +5,14 @@ import SectionTitle from '../titles/SectionTitle';
 import TeamMemberItem from './TeamMemberItem';
 
 // Team Images
-import teamMember1 from '../../assets/images/instruc_1.jpeg';
-import teamMember2 from '../../assets/images/instruc_2.jpeg';
+import teamMember1 from '../../assets/images/instruc_1.png';
+import teamMember2 from '../../assets/images/instruc_2.png';
 
 const TeamSectionStyles = styled.div`
   padding: 10rem 0;
   .team__wrapper {
     display: flex;
+    justify-content: center;
     gap: 1rem;
   }
   .team__info {
@@ -26,8 +27,10 @@ const TeamSectionStyles = styled.div`
   .team__members {
     text-align: center;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 5rem;
   }
   @media only screen and (max-width: 768px) {
@@ -62,13 +65,13 @@ const TeamSection = () => (
           <TeamMemberItem
             img={teamMember1}
             name="Ariadna"
-            title="Instructora"
+            title="(Instructora de pilates)"
           />
 
           <TeamMemberItem
             img={teamMember2}
             name="Marcela"
-            title="Instructora"
+            title="(Instructora de pilates)"
           />
         </div>
       </div>

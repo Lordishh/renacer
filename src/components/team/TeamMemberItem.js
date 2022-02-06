@@ -5,11 +5,16 @@ import ParagraphText from '../paragraphTexts/ParagraphText';
 
 const TeamMemberItemStyles = styled.div`
   .teamMember__img {
-    margin-bottom: 2rem;
-    object-fit: contain;
+    margin-bottom: 4rem;
     img {
       border-radius: 18px;
       max-height: 400px;
+      /* border: 3px solid white; */
+      box-shadow: 0px 0px 50px
+        ${({ theme: { theme } }) =>
+          theme === themeList.light
+            ? 'var(--darkBlue_2)'
+            : 'var(--lightBlue_1)'};
     }
   }
   .teamMember__name {
