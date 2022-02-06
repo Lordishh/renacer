@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 import PrimaryButton from './buttons/PrimaryButton';
 import ParagraphText from './paragraphTexts/ParagraphText';
 import HeroTitle from './titles/HeroTitle';
@@ -56,11 +57,15 @@ const HeroSection = () => (
     <div className="container">
       <div className="hero__wrapper">
         <div className="hero__info">
-          <HeroTitle className="hero__title">¿Querés probar?</HeroTitle>
+          <HeroTitle className="hero__title">
+            ¿Querés probar una clase?
+          </HeroTitle>
           <ParagraphText className="hero__desc">
             Solicitá una clase totalmente gratuita.
           </ParagraphText>
-          <PrimaryButton>Contactarse</PrimaryButton>
+          <Link to="contact">
+            <PrimaryButton>Contactarse</PrimaryButton>
+          </Link>
         </div>
         <div className="hero__img">
           <img src={HeroImg} alt="Renacer" />
