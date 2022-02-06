@@ -4,6 +4,7 @@ import ContactSection from '../components/contactSection/ContactSection';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
+import PilatesSection from '../components/Information/PilatesSection';
 import NewsletterSection from '../components/NewsletterSection';
 import ServicesSection from '../components/services/ServicesSection';
 import TeamSection from '../components/team/TeamSection';
@@ -14,6 +15,7 @@ const LandingPage = () => (
     <HeroSection />
     <ServicesSection />
     <AboutSection />
+    <PilatesSection />
     <TeamSection />
     <NewsletterSection />
     <ContactSection />
