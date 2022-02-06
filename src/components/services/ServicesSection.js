@@ -34,17 +34,17 @@ function ServicesSection() {
           <ServiceItem
             icon={<RiHeartsFill />}
             title="Pilates Reformer"
-            desc="Esta clase es para un máximo de 6 personas, cada alumno tiene su propio Reformer y toda la clase trabaja en su equipo."
+            desc='Es una gimnasia en la que se trabaja combinando cuerpo, mente y alma con la ayuda de una camilla perfectamente diseñada "reformer" '
           />
           <ServiceItem
             icon={<RiHeartsFill />}
-            title="Pilates Circuito"
-            desc="En la modalidad Circuito los alumnos trabajan con diferentes equipamientos. "
+            title="Pilates Funcional"
+            desc="En la modalidad Funcional los alumnos trabajan con diferentes elementos, convirtiendo esta clase en un circuito entretenido"
           />
           <ServiceItem
             icon={<RiHeartsFill />}
-            title="Clases personalizadas"
-            desc="Esta clase está dirigida para las personas que necesitan un seguimiento específico."
+            title="Pilates Mat"
+            desc="Pilates en colchoneta (como quizás hayas oído por ahí). Consiste en la realización de los ejercicios del Método en suelo sin ayuda de ninguna máquina de Pilates"
           />
         </div>
       </div>
