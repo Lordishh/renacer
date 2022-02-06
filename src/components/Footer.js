@@ -11,7 +11,7 @@ const FooterStyles = styled.footer`
     text-align: center;
   }
   .logo {
-    font-family: 'Faster One', cursive;
+    font-family: 'Mochiy Pop One', sans-serif;
     font-size: 3rem;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -41,6 +41,17 @@ const FooterStyles = styled.footer`
       }
     }
   }
+  .footer__copyright {
+    font-size: 1.2rem;
+    color: var(--lightBlue_1);
+  }
+  @media only screen and (mx-width: 768px) {
+    .footer__links {
+      a {
+        font-size: 1.4rem;
+      }
+    }
+  }
 `;
 
 const Footer = () => (
@@ -52,7 +63,7 @@ const Footer = () => (
         </Link>
 
         <ParagraphText className="footer__desc">
-          un lugar donde rendirse no es una opción
+          Alumbra el mañana con el presente
         </ParagraphText>
         <div className="footer__links">
           <ul>
@@ -64,6 +75,11 @@ const Footer = () => (
             <li>
               <Link to="services" smooth>
                 Entrenamientos
+              </Link>
+            </li>
+            <li>
+              <Link to="pilates" smooth>
+                Beneficios
               </Link>
             </li>
             <li>
@@ -79,7 +95,8 @@ const Footer = () => (
           </ul>
         </div>
         <ParagraphText className="footer__copyriht">
-          © Renacer 2022. Todos los derechos reservados by Enuel Monzón.
+          © Copyright 2022 | Todos los derechos reservados | Diseñado por
+          <a href="https://github.com/Lordishh"> Enuel Monzón</a>.
         </ParagraphText>
       </div>
     </div>
