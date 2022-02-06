@@ -125,7 +125,9 @@ const Header = () => {
     <HeaderStyles>
       <div className="container">
         <div className="navigation">
-          <h1 className="logo">Renacer</h1>
+          <Link to="hero" smooth>
+            <h1 className="logo">Renacer</h1>
+          </Link>
           <div className="navMenu">
             <nav className={isMobile && isNavOpen ? 'open' : undefined}>
               {isMobile && (
@@ -141,19 +143,29 @@ const Header = () => {
               )}
               <ul>
                 <li>
-                  <Link to="hero">Inicio</Link>
+                  <Link to="hero" smooth>
+                    Inicio
+                  </Link>
                 </li>
                 <li>
-                  <Link to="services">Entrenamientos</Link>
+                  <Link to="services" smooth>
+                    Entrenamientos
+                  </Link>
                 </li>
                 <li>
-                  <Link to="pilates">Beneficios</Link>
+                  <Link to="pilates" smooth>
+                    Beneficios
+                  </Link>
                 </li>
                 <li>
-                  <Link to="about">Nosotras</Link>
+                  <Link to="about" smooth>
+                    Nosotras
+                  </Link>
                 </li>
                 <li>
-                  <Link to="contact">Contacto</Link>
+                  <Link to="contact" smooth>
+                    Contacto
+                  </Link>
                 </li>
               </ul>
             </nav>
