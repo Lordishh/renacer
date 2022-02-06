@@ -63,9 +63,9 @@ const HeroSection = () => (
           <ParagraphText className="hero__desc">
             Solicitá una clase totalmente gratuita.
           </ParagraphText>
-          <Link to="contact">
-            <PrimaryButton>Contactarse</PrimaryButton>
-          </Link>
+          <PrimaryButton buttonType={Link} to="team" smooth>
+            Contactar por WhatsApp
+          </PrimaryButton>
         </div>
         <div className="hero__img">
           <img src={HeroImg} alt="Renacer" />
