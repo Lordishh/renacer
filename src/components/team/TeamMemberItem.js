@@ -17,6 +17,7 @@ const TeamMemberItemStyles = styled.div`
             : 'var(--lightBlue_1)'};
     }
   }
+  .teamMember__phone,
   .teamMember__name {
     font-weight: 500;
     font-size: 1.8rem;
@@ -33,13 +34,14 @@ const TeamMemberItemStyles = styled.div`
   }
 `;
 
-const TeamMemberItem = ({ img, name, title }) => (
-  <TeamMemberItemStyles>
+const TeamMemberItem = ({ img, name, title, phone }) => (
+  <TeamMemberItemStyles id="team">
     <div className="teamMember__img">
       <img src={img} alt={name} />
     </div>
     <ParagraphText className="teamMember__name">{name}</ParagraphText>
     <ParagraphText className="subtitle">{title}</ParagraphText>
+    <ParagraphText className="teamMember__phone">{phone}</ParagraphText>
   </TeamMemberItemStyles>
 );
 

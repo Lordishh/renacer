@@ -66,12 +66,14 @@ const TeamSection = () => (
             img={teamMember1}
             name="Ariadna"
             title="(Instructora de pilates)"
+            phone="+54 9 3489 54-7457"
           />
 
           <TeamMemberItem
             img={teamMember2}
             name="Marcela"
             title="(Instructora de pilates)"
+            phone="+54 9 3489 59-7652"
           />
         </div>
       </div>
