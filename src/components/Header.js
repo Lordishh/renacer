@@ -21,7 +21,7 @@ const HeaderStyles = styled.header`
     padding: 1rem 0;
   }
   .logo {
-    font-family: 'Faster One', cursive;
+    font-family: 'Mochiy Pop One', sans-serif;
     font-size: 3rem;
     color: var(--mediumSlateBlue);
   }
@@ -145,6 +145,9 @@ const Header = () => {
                 </li>
                 <li>
                   <Link to="services">Entrenamientos</Link>
+                </li>
+                <li>
+                  <Link to="pilates">Beneficios</Link>
                 </li>
                 <li>
                   <Link to="about">Nosotras</Link>
